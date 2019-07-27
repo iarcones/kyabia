@@ -15,12 +15,9 @@
 
   <body>
     <h6>This website is used to test tools and integrations!</h6>
+    <h6>chat live</h6>
 
-    <a href="chat-live.html">HubSpot: chat live</a>
-    <br>
-    <a href="chat-bot.html">HubSpot: chat bot</a>
-    <br>
-    <a href="chat-bot.html">Gobot : chat bot. Example-1</a>
+
 
 
     <!-- Optional JavaScript -->
@@ -35,14 +32,18 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
 
-    <!-- HubSpot ChatFlow -->
-
-    <!-- Start of HubSpot Embed Code -->
-    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6190930.js"></script> -->
-    <!-- End of HubSpot Embed Code -->
-  
-
-   
+      <script type="text/javascript">
+        (function(){
+        window['gobot'] = window['gobot'] || function(){(window['gobot'].queue = window['gobot'].queue || []).push(arguments)}
+        var script = document.createElement('script')
+        script.async = 1
+        script.src = 'https://www.getgobot.com/app/v1/gobot-client.js'
+        var insert = document.getElementsByTagName('script')[0]
+        insert.parentNode.insertBefore(script, insert)
+        })()
+        gobot('create', '-LkjndmifLgOQxomU7GM')
+        gobot('pageview')
+        </script>
   
   </body>
 
